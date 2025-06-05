@@ -26,9 +26,14 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+             Icon(
+                Icons.mosque,
+                size: 100,
+                color: Colors.teal.shade700,
+              ),
             // (Optional) Logo atau teks
-            Text("Muslim App", style: TextStyle(fontSize: 24, color: Colors.teal.shade700,)),
-            SizedBox(height: 20),
+            Text("Muslim App", style: TextStyle(fontSize: 24, color: Colors.teal.shade700, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 20),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40.0),

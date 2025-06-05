@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/views/home_page.dart';
 import 'package:muslim_app/views/doa_page.dart';
-import 'package:muslim_app/views/jadwal_page.dart';
+import 'package:muslim_app/views/about_page.dart';
 import 'package:muslim_app/views/month_schedule_page.dart';
 import 'package:muslim_app/views/surat_page.dart';
 
@@ -29,6 +29,7 @@ class _MainPageState extends State<MainPage> {
       // const JadwalPage(),
       const SuratPage(),
       const DoaPage(),
+      const AboutPage(),
     ];
 
     return Scaffold(
@@ -43,6 +44,7 @@ class _MainPageState extends State<MainPage> {
           // BottomNavigationBarItem(icon: Icon(Icons.access_time), label: 'Jadwal'),
           BottomNavigationBarItem(icon: Icon(Icons.menu_book), label: 'Surat'),
           BottomNavigationBarItem(icon: Icon(Icons.book), label: 'Doa'),
+          BottomNavigationBarItem(icon: Icon(Icons.info_outline), label: 'Tentang'),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.teal,
